@@ -17,11 +17,12 @@ export const Header: React.FC = () => {
           type="button"
           className="font-medium font-Lexend border-[#f23cfa] border-4 h-10 rounded-full text-[#f23cfa] w-1/2 hover:bg-[#f23cfa] hover:text-white transition-all duration-300"
           name="button"
-          onClick={() =>
+          onClick={() => {
             document
               .querySelector("#about")
-              ?.scrollIntoView({ behavior: "smooth" })
-          }
+              ?.scrollIntoView({ behavior: "smooth" });
+            setMenuToggled(false);
+          }}
         >
           Show More
         </button>
@@ -37,18 +38,19 @@ export const Header: React.FC = () => {
           href="/#about"
           className="hover:text-[#ECB5F5] transition-all duration-300"
         >
-          About
+          <button onClick={() => setMenuToggled(false)}>About</button>
         </Link>
       );
     }
     return (
       <button
         className="hover:text-[#ECB5F5] transition-all duration-300"
-        onClick={() =>
+        onClick={() => {
           document
             .querySelector("#about")
-            ?.scrollIntoView({ behavior: "smooth" })
-        }
+            ?.scrollIntoView({ behavior: "smooth" });
+          setMenuToggled(false);
+        }}
       >
         About
       </button>
@@ -93,7 +95,7 @@ export const Header: React.FC = () => {
               href="/contact#contact"
               className="hover:text-[#ECB5F5] transition-all duration-300"
             >
-              Contact
+              <button onClick={() => setMenuToggled(false)}>Contact</button>
             </Link>
           </li>
         </ul>
@@ -112,7 +114,7 @@ export const Header: React.FC = () => {
               href="/contact#contact"
               className="hover:text-[#ECB5F5] transition-all duration-300"
             >
-              Contact
+              <button onClick={() => setMenuToggled(false)}>Contact</button>
             </Link>
           </li>
         </ul>
