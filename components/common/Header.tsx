@@ -41,7 +41,7 @@ export const Header: React.FC = () => {
           Immersive
         </Link>
         <button
-          className="items-left ml-auto"
+          className="items-left ml-auto lg:hidden"
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
