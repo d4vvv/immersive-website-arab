@@ -16,8 +16,9 @@ export const Footer: React.FC = () => {
           </div>
           <div className="flex flex-col items-center text-[13px] font-medium text-center gap-1 pb-2 lg:basis-1/2">
             <h2 className="font-Dela text-3xl mb-2">CONTACT US</h2>
+            <h4>ul. Jasna 8/20</h4>
             <h4>00-013 Warszawa</h4>
-            <h4>Jasna 8/20, Polska</h4>
+            <h4>Poland</h4>
             <h4>+48 669 743 708</h4>
             <h4>office@immersivegroup.eu</h4>
             <h4>KRS 0000853876</h4>
