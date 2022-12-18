@@ -26,7 +26,7 @@ export const ContactForm: React.FC = () => {
             </label>
             <input
               type="email"
-              className="py-2 px-3 text-[#495057] border-[1px] border-[#ced4da] rounded-[4px]"
+              className="py-2 px-3 text-[#495057] border-[1px] border-[#ced4da] rounded-[4px] focus:border-[#ECB5F5] focus:outline-[#ECB5F5] transition-all duration-300"
               id="exampleFormControlInput1"
               placeholder="name@mail.com"
             />
@@ -39,14 +39,14 @@ export const ContactForm: React.FC = () => {
               Message
             </label>
             <textarea
-              className="py-2 px-3 text-[#495057] border-[1px] border-[#ced4da] rounded-[4px]"
+              className="py-2 px-3 text-[#495057] border-[1px] border-[#ced4da] rounded-[4px] focus:border-[#ECB5F5] focus:outline-[#ECB5F5] transition-all duration-300"
               id="exampleFormControlTextarea1"
             ></textarea>
           </div>
           <div className="btn-container">
             <button
               type="submit"
-              className="font-medium font-Lexend border-[#f23cfa] border-4 h-10 rounded-full text-[#f23cfa] px-8"
+              className="font-medium font-Lexend border-[#f23cfa] border-4 h-10 rounded-full text-[#f23cfa] px-8 hover:bg-[#f23cfa] hover:text-white transition-all duration-300"
               name="button"
             >
               Submit

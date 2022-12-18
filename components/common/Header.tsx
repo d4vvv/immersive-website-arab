@@ -15,7 +15,7 @@ export const Header: React.FC = () => {
       return (
         <button
           type="button"
-          className="font-medium font-Lexend border-[#f23cfa] border-4 h-10 rounded-full text-[#f23cfa] w-1/2"
+          className="font-medium font-Lexend border-[#f23cfa] border-4 h-10 rounded-full text-[#f23cfa] w-1/2 hover:bg-[#f23cfa] hover:text-white transition-all duration-300"
           name="button"
           onClick={() =>
             document
@@ -28,6 +28,31 @@ export const Header: React.FC = () => {
       );
     }
     return null;
+  };
+
+  const renderAbout = () => {
+    if (router.pathname.includes("contact")) {
+      return (
+        <Link
+          href="/#about"
+          className="hover:text-[#ECB5F5] transition-all duration-300"
+        >
+          About
+        </Link>
+      );
+    }
+    return (
+      <button
+        className="hover:text-[#ECB5F5] transition-all duration-300"
+        onClick={() =>
+          document
+            .querySelector("#about")
+            ?.scrollIntoView({ behavior: "smooth" })
+        }
+      >
+        About
+      </button>
+    );
   };
 
   return (
@@ -62,19 +87,14 @@ export const Header: React.FC = () => {
         </button>
 
         <ul className="max-lg:hidden ml-auto justify-end flex font-medium items-center gap-4">
+          <li>{renderAbout()}</li>
           <li>
-            <button
-              onClick={() =>
-                document
-                  .querySelector("#about")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
+            <Link
+              href="/contact#contact"
+              className="hover:text-[#ECB5F5] transition-all duration-300"
             >
-              About
-            </button>
-          </li>
-          <li>
-            <Link href="/contact#contact">Contact</Link>
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>
@@ -84,21 +104,16 @@ export const Header: React.FC = () => {
         })}
       >
         <ul className="py-8">
-          <li>
-            <button
-              onClick={() =>
-                document
-                  .querySelector("#about")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              About
-            </button>
-          </li>
+          <li>{renderAbout()}</li>
         </ul>
         <ul>
           <li>
-            <Link href="/contact#contact">Contact</Link>
+            <Link
+              href="/contact#contact"
+              className="hover:text-[#ECB5F5] transition-all duration-300"
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>

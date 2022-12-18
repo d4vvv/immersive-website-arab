@@ -7,7 +7,7 @@ export const ContactUs: React.FC = () => {
         <p className="font-Dela uppercase text-3xl">Ready to contact us?</p>
         <p className="font-Lexend mb-2">Send us an email.</p>
         <Link href="/contact#contact">
-          <button className="border-white border-4 rounded-full font-bold font-Lexend px-10 py-1 max-w-[200px] lg:max-w-[350px] lg:px-20">
+          <button className="border-white border-4 rounded-full font-bold font-Lexend px-10 py-1 max-w-[200px] lg:max-w-[350px] lg:px-20 hover:bg-white hover:text-[#796c91] transition-all duration-300">
             Contact
           </button>
         </Link>
