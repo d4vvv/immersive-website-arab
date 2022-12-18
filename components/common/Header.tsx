@@ -37,7 +37,7 @@ export const Header: React.FC = () => {
           className="flex items-center lg:min-w-[600px] font-medium text-xl"
           href="/"
         >
-          <Image className="w-[15%] p-[2%]" src={logo} alt="LOGO" />
+          <Image className="w-[15%] p-[2%]" src={logo} alt="LOGO" priority />
           Immersive
         </Link>
         <button
@@ -125,6 +125,7 @@ export const Header: React.FC = () => {
                 src={headerImg}
                 className="lg:w-[80%] -scale-x-100"
                 alt="ar-img"
+                priority
               />
             </div>
           </div>
