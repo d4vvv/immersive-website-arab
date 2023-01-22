@@ -6,24 +6,29 @@ import img3 from "../../public/img/undraw_teaching_f1cm.svg";
 export const ImmersiveExperience: React.FC = () => {
   return (
     <section id="about">
-      <h2 className="font-Dela uppercase text-[28px] lg:text-[40px] text-center mt-[3%] py-16">
-        Immersive Experience
+      <h2 dir='rtl' className="font-Dela uppercase text-[28px] lg:text-[40px] text-center mt-[3%] py-16 rtl">
+        IMMERSIVE تجربة 
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 lg:max-w-[1100px] mx-auto">
         <ExpBlock
           imgSrc={img1}
-          title="IMMERSIVE PLATFORM"
-          text="We build our AR platform using Unity game engine that allows us rapidly develop, test and deploy the most feasible soultions to a range of AR enviroments at once. We are focusing mostly on Microsoft HoloLens2, smartphones and tablet devices."
+          title="IMMERSIVE منصة"
+          text="ننشئ منصتنا لتكنولوجيا الواقع المعزز باستخدام محرك ألعاب &quot;يونيتي&quot; الذي يسمح لنا بالتطوير، فحوصات وتطبيق
+          حلول ممكنة أكثر على مستوى هيئات الواقع المعزز في نفس الوقت. نركّز في الغالب على مايكروسوفت هولولينس
+          2، هواتف ذكية وحواسب لوحية."
         />
         <ExpBlock
           imgSrc={img2}
-          title="HUMAN-CENTERED DESIGN"
-          text="As VR and AR interfaces are in their very core assistive technologies, we are putting a lot of emphasis on the users. We are developing our tools with the best practices and research regarding human-centered design. This allows for the wider and less uncertain prone adaptation of our tools by the practitioners and industry users."
+          title="تخطيط مركّز على الإنسان"
+          text="واجهة تكنولوجيا الواقع الافتراضي والمعزز هي أساس التقنيات المساعِدة. لذلك نركّز كثيراّ على المستخدمين. نطوّر
+          أجهزتنا عن طريق أفضل ممارسات وبحوث وفقًا للتخطيط المركّز على الإنسان وذلك ما يسمح لنا بتكيّف أجهزتنا
+          بصورة أوسع وأقل إشكالية من قبل ممارسين ومستخدمين صناعيين."
         />
         <ExpBlock
           imgSrc={img3}
-          title="RESEARCH"
-          text="We base our work on the research results that use the analysis of physiological signals for the detection of changes of the affective conditions of the trainees."
+          title="البحث"
+          text="يعتمد عملنا على نتائج البحوث التي تستخدم لتحليل إشارات فيزيولوجية لاكتشاف التغيرات في ظروف المؤثرة لدى
+          المتدربين."
         />
       </div>
     </section>

@@ -17,6 +17,7 @@ export const Header: React.FC = () => {
           type="button"
           className="font-medium font-Lexend border-[#f23cfa] border-4 h-10 rounded-full text-[#f23cfa] w-1/2 hover:bg-[#f23cfa] hover:text-white transition-all duration-300"
           name="button"
+          dir="rtl"
           onClick={() => {
             document
               .querySelector("#about")
@@ -24,7 +25,7 @@ export const Header: React.FC = () => {
             setMenuToggled(false);
           }}
         >
-          Show More
+          عرض المزيد
         </button>
       );
     }
@@ -36,15 +37,16 @@ export const Header: React.FC = () => {
       return (
         <Link
           href="/#about"
-          className="hover:text-[#ECB5F5] transition-all duration-300"
+          className="hover:text-[#ECB5F5] transition-all duration-300 rtl"
         >
-          <button onClick={() => setMenuToggled(false)}>About</button>
+          <button onClick={() => setMenuToggled(false)}>عنا</button>
         </Link>
       );
     }
     return (
       <button
         className="hover:text-[#ECB5F5] transition-all duration-300"
+        dir="rtl"
         onClick={() => {
           document
             .querySelector("#about")
@@ -52,7 +54,7 @@ export const Header: React.FC = () => {
           setMenuToggled(false);
         }}
       >
-        About
+        عنا
       </button>
     );
   };
@@ -64,8 +66,10 @@ export const Header: React.FC = () => {
           className="flex items-center lg:min-w-[600px] font-medium text-xl"
           href="/"
         >
-          <Image className="w-[15%] p-[2%]" src={logo} alt="LOGO" priority />
-          Immersive
+          <Image className="w-[15%] p-[2%] rtl" src={logo} alt="LOGO" priority />
+          <span dir="rtl">
+          IMMERSIVE شركة
+          </span>
         </Link>
         <button
           className="items-left ml-auto lg:hidden"
@@ -94,8 +98,9 @@ export const Header: React.FC = () => {
             <Link
               href="/contact#contact"
               className="hover:text-[#ECB5F5] transition-all duration-300"
+              dir="rtl"
             >
-              <button onClick={() => setMenuToggled(false)}>Contact</button>
+              <button dir="rtl" onClick={() => setMenuToggled(false)}>الاتصال</button>
             </Link>
           </li>
         </ul>
@@ -113,8 +118,9 @@ export const Header: React.FC = () => {
             <Link
               href="/contact#contact"
               className="hover:text-[#ECB5F5] transition-all duration-300"
+              dir="rtl"
             >
-              <button onClick={() => setMenuToggled(false)}>Contact</button>
+              <button dir="rtl" onClick={() => setMenuToggled(false)}>الاتصال</button>
             </Link>
           </li>
         </ul>
@@ -126,12 +132,12 @@ export const Header: React.FC = () => {
           })}
         >
           <div className="basis-full lg:basis-1/3 px-4">
-            <div className="mr-[10%] text-white leading-6">
-              <h1 className="font-Dela text-3xl mb-4 lg:mb-3 max-lg:pt-12">
-                HUMAN-CENTERED AR/MR/VR
+            <div dir="rtl" className="mr-[10%] text-white leading-6">
+              <h1 dir="rtl" className="font-Dela text-3xl mb-4 lg:mb-3 max-lg:pt-12 rtl">
+              التكنولوجيا المركزة على الإنسان للواقع المعزز والمختلط والافتراضي
               </h1>
-              <p className="font-Lexend mb-4  font-medium">
-                Immersive solutions for you and your business
+              <p dir="rtl" className="font-Lexend mb-4 rtl font-medium">
+              حلول آسرة لك ولشركتك
               </p>
               {renderButton()}
             </div>

@@ -19,37 +19,41 @@ export const ContactForm: React.FC = () => {
         >
           <div className="flex flex-col gap-2">
             <label
+              dir="rtl"
               htmlFor="exampleFormControlInput1"
               className="font-Lexend font-medium text-start"
             >
-              Email address
+              عنوان البريد الالكتروني
             </label>
             <input
               type="email"
               className="py-2 px-3 text-[#495057] border-[1px] border-[#ced4da] rounded-[4px] focus:border-[#ECB5F5] focus:outline-[#ECB5F5] transition-all duration-300"
               id="exampleFormControlInput1"
               placeholder="name@mail.com"
+              dir="rtl"
             />
           </div>
           <div className="flex flex-col gap-2">
             <label
               htmlFor="exampleFormControlTextarea1"
               className="font-Lexend font-medium text-start"
+              dir='rtl'
             >
-              Message
+              الرسالة
             </label>
             <textarea
               className="py-2 px-3 text-[#495057] border-[1px] border-[#ced4da] rounded-[4px] focus:border-[#ECB5F5] focus:outline-[#ECB5F5] transition-all duration-300"
               id="exampleFormControlTextarea1"
+              dir="rtl"
             ></textarea>
           </div>
-          <div className="btn-container">
+          <div className="btn-container" dir="rtl">
             <button
               type="submit"
               className="font-medium font-Lexend border-[#f23cfa] border-4 h-10 rounded-full text-[#f23cfa] px-8 hover:bg-[#f23cfa] hover:text-white transition-all duration-300"
               name="button"
             >
-              Submit
+              التقديم
             </button>
           </div>
         </form>

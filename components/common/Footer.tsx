@@ -14,16 +14,16 @@ export const Footer: React.FC = () => {
             />
             <h4 className="font-medium text-[13px]">Immersive</h4>
           </div>
-          <div className="flex flex-col items-center text-[13px] font-medium text-center gap-1 pb-2 lg:basis-1/2">
-            <h2 className="font-Dela text-3xl mb-2">CONTACT US</h2>
-            <h4>ul. Jasna 8/20</h4>
-            <h4>00-013 Warszawa</h4>
-            <h4>Poland</h4>
-            <h4>+48 669 743 708</h4>
-            <h4>office@immersivegroup.eu</h4>
-            <h4>KRS 0000853876</h4>
-            <h4>NIP 7272844253</h4>
-            <h4>REGON 38671569400000</h4>
+          <div dir="rtl" className="flex flex-col items-center text-[13px] font-medium text-center gap-1 pb-2 lg:basis-1/2">
+            <h2 className="font-Dela text-3xl mb-2">اتصلوا بنا!</h2>
+            <h4>شارع ياسنا (Jasna) 8/20</h4>
+            <h4>مدينة وارسو، الرمز البريدي: 00-013</h4>
+            <h4>بولندا</h4>
+            <h4>الهاتف المحمول: +48 669 743 708</h4>
+            <h4>البريد الالكتروني: office@immersivegroup.eu</h4>
+            <h4>رقم السجل التجاري: 0000853876</h4>
+            <h4>رقم تعريف الضرائب: 7272844253</h4>
+            <h4>رقم التعريف الإحصائي: 38671569400000</h4>
           </div>
         </div>
       </div>
