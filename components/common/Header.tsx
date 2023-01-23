@@ -5,6 +5,7 @@ import logo from "../../public/img/logo.png";
 import headerImg from "../../public/img/undraw_augmented_reality_heuy.svg";
 import cs from "classnames";
 import { useRouter } from "next/router";
+import { Flags } from "./Flags";
 
 export const Header: React.FC = () => {
   const [isMenuToggled, setMenuToggled] = useState(false);
@@ -103,6 +104,7 @@ export const Header: React.FC = () => {
               <button dir="rtl" onClick={() => setMenuToggled(false)}>الاتصال</button>
             </Link>
           </li>
+          <Flags />
         </ul>
       </nav>
       <nav
@@ -123,6 +125,7 @@ export const Header: React.FC = () => {
               <button dir="rtl" onClick={() => setMenuToggled(false)}>الاتصال</button>
             </Link>
           </li>
+          <Flags />
         </ul>
       </nav>
       <div className="w-full sm:max-w-[640] px-4 md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:mx-w-[1536px] mx-auto">
